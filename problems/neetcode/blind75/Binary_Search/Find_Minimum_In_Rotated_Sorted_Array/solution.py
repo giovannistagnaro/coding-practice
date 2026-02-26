@@ -15,7 +15,7 @@ class Solution:
         else:
             return nums[start]
 
-    def search(self, nums: List[int]) -> int:
+    def findMin(self, nums: List[int]) -> int:
         if len(nums) == 1:
             return nums[0]
         return self.binarySearch(nums, 0, len(nums) - 1, (len(nums) - 1) // 2)
