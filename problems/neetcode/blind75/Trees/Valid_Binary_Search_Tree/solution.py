@@ -4,8 +4,7 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 from TreeNode import TreeNode
-from typing import Optional, List
-from BuildTree import buildTree
+from typing import Optional
 from collections import deque
 
 class Solution:
@@ -33,7 +32,3 @@ class Solution:
                 stack.append((current_left, [curr_min, current_value]))
 
         return True
-        
-    #     5
-    #   4   6
-    # None None 3 7
