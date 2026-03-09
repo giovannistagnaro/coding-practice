@@ -23,7 +23,7 @@ class HitCounter:
         self.hits.append(timestamp)
 
     def getHits(self, timestamp):
-        l = timestamp - 299
+        l = timestamp - 300 + 1
         first_valid = bisect_left(self.hits, l)
 
         return len(self.hits) - first_valid
